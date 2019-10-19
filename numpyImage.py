@@ -15,11 +15,13 @@ def plti(im, h=8, **kwargs):
     plt.axis('off')
     #input('press <ENTER> to continue')
 
-
-#%matplotlib pltinline
-im = plt.imread("airplane.png")
-print(type(im))
-plti(im)
-im = im[400:3800,:2000,:]
-plti(im)
-print( im.shape )
+def main():
+    #%matplotlib pltinline
+    im = plt.imread("airplane.png")
+    print(type(im))
+    plti(im)
+    im = im[400:3800,:2000,:]
+    plti(im)
+    print( im.shape )
+    
+main()
